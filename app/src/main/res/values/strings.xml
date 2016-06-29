@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LessonTwoProject</string>
+
+    <string name="teamone">Team A</string>
+    <string name="teamtwo">Team B</string>
+
+    <string name="incrementone">+1</string>
+    <string name="incrementtwo">+2</string>
+    <string name="incrementthree">+3</string>
+
+    <string name="decrementone">-1</string>
+    <string name="decrementtwo">-2</string>
+    <string name="decrementthree">-3</string>
+
+    <string name="reset">Reset</string>
+
+
+</resources>

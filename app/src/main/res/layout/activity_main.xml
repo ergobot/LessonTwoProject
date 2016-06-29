@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.lessontwoproject.MainActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/reset_button"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/teamone"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/incrementthree"
+                android:onClick="changeScoreTeamA"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/incrementtwo"
+                android:onClick="changeScoreTeamA"
+                android:id="@+id/button" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/incrementone"
+                android:onClick="changeScoreTeamA"
+                />
+
+            <TextView
+                android:id="@+id/teamonescore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/decrementone"
+                android:onClick="changeScoreTeamA"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/decrementtwo"
+                android:onClick="changeScoreTeamA"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/decrementthree"
+                android:onClick="changeScoreTeamA"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/teamtwo"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/incrementthree"
+                android:onClick="changeScoreTeamB"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/incrementtwo"
+                android:onClick="changeScoreTeamB"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/incrementone"
+                android:onClick="changeScoreTeamB"
+                />
+
+            <TextView
+                android:id="@+id/teamtwoscore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="0"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/decrementone"
+                android:onClick="changeScoreTeamB"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/decrementtwo"
+                android:onClick="changeScoreTeamB"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/decrementthree"
+                android:onClick="changeScoreTeamB"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_alignParentBottom="true"
+        android:onClick="resetScores"
+        />
+
+
+</RelativeLayout>
